@@ -41,6 +41,43 @@
     transform: translateX(0);
 }
 
+@media (max-width: 768px) {
+
+    /* Centrar texto en móvil */
+    .carousel-caption {
+        text-align: center;
+        left: 0;
+        right: 0;
+        padding: 0 20px;
+    }
+
+    /* Reducir título */
+    .carousel-caption h1 {
+        font-size: 32px !important;
+    }
+
+    /* Botones en columna */
+    .carousel-caption .mt-3 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* Botones más pequeños en móvil */
+    .btn-green,
+    .btn-orange {
+        width: 160px;
+        padding: 10px 20px;
+    }
+
+    /* Imágenes más limpias */
+    .carousel-item img {
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
 /* Sección Mejores Frutas */
 
 .best-fruits {
